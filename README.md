@@ -51,8 +51,8 @@ Nesse projeto, você será capaz de:
 ## Data de entrega
 
   - Projeto obrigatório;
-  - Serão `X` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Serão `2` dias de projeto.
+  - Data de entrega para avaliação final do projeto: `02/09/2021 - 14:00h`.
 
 ---
 
@@ -224,10 +224,10 @@ Exemplo:
 - Estudante `Rafa` implementa 50% dos requisitos obrigatórios
 - Em seguida `Gabs`, sua dupla, complementa com os 50% restantes (atingindo 100% dos obrigatórios)
   - Neste momento **SOMENTE** `Gabs` obteve aprovação.
-- `Rafa` faz um Push em sua branch, com o código completo (atingindo 100% dos obrigatórios) 
+- `Rafa` faz um Push com o código completo (atingindo 100% dos obrigatórios) 
   - Neste momento `Rafa` também obtém a aprovação
 
-Para mais detalhes de como deve ocorrer a dinâmica, [consulte este material](TODO:link/da/apresentação/feita/para/a/turma/na/explicação/do/projeto)
+Para mais detalhes de como deve ocorrer a dinâmica, [consulte este material](https://docs.google.com/presentation/d/1jVJSUen9xHPPcrHsMAsLXw1BcL8UC_UbQHzXj8ELg40/edit#slide=id.g541141265b_0_0)
 
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
