@@ -27,5 +27,3 @@ class Inventory:
         elif report_type == "completo":
             return CompleteReport.generate(readed_content)
         return None
-
-
