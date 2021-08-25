@@ -14,6 +14,9 @@ class Inventory:
             elif path.endswith(".csv"):
                 return list(csv.DictReader(csv_or_json_content))
             elif path.endswith(".xml"):
+                # "Source:
+                #  https://omz-software.com/pythonista/docs/ios/xmltodict.html"
+                # "Source: https://docs.python-guide.org/scenarios/xml/"
                 to_dict = xmltodict.parse(csv_or_json_content.read())
                 return [dict(item) for item in to_dict["dataset"]["record"]]
             else:
