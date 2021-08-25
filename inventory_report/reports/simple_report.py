@@ -1,4 +1,4 @@
-import json
+# import json
 from datetime import datetime, date
 from collections import Counter
 
@@ -38,19 +38,15 @@ class report_definition:
 class SimpleReport:
     @classmethod
     def generate(self, file):
-        with open(file) as report_file:
-            content = json.load(report_file)
-            by_age = report_definition.oldest_fabrication_date(content)
-            by_due_date = report_definition.next_due_date(content)
-            by_company_ocurrence = report_definition.most_current_company(
-                content
-            )
-            report1 = f"Data de fabricação mais antiga: {by_age}"
-            report2 = f"Data de validade mais próxima: {by_due_date}"
-            report3_text = "Empresa com maior quantidade de produtos estocados"
-            report3 = f"{report3_text}: {by_company_ocurrence}"
+        content = file
+        by_age = report_definition.oldest_fabrication_date(content)
+        by_due_date = report_definition.next_due_date(content)
+        by_company_ocurrence = report_definition.most_current_company(
+            content
+        )
+        report1 = f"Data de fabricação mais antiga: {by_age}"
+        report2 = f"Data de validade mais próxima: {by_due_date}"
+        report3_text = "Empresa com maior quantidade de produtos estocados"
+        report3 = f"{report3_text}: {by_company_ocurrence}"
 
-        return report1, report2, report3
-
-
-print(SimpleReport.generate("./inventory_report/data/inventory.json"))
+        return f"{report1}\n{report2}\n{report3}\n"
